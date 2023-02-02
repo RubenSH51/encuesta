@@ -1,0 +1,228 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    background-color: #fbffcd;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* >>>>>>>>>>>>>>>>>>>> HEADER*/
+
+.goUp, .goBack
+{
+    background: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    font-size: 40px;
+    background-color: #6b5537;
+    color: white;
+    border-radius: 50%;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+
+
+.goUp:hover
+{
+    color: #6b5537;
+    background-color: transparent;
+    outline: 3px solid #6b5537;
+    transform: rotate(360deg);
+    transition: 0.3s all ease-in-out;
+}
+
+.goUp
+{
+    padding: 8px 16px;
+}
+
+.goBack
+{
+    right: 100px;
+    padding: 8px 14px;
+}
+
+.goBack:hover
+{
+    color: #6b5537;
+    background-color: transparent;
+    outline: 3px solid #6b5537;
+    transform: rotate(360deg);
+    transition: 0.3s all ease-in-out;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>> MAIN*/
+
+
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+
+.pregunta
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pregunta h2
+{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.pregunta p
+{
+    text-align: center;
+    font-size: 2.5rem;
+    color:gray;
+}
+
+.botonera
+{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.botonera button
+{
+    font-size: 3rem;
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.botonera button:hover
+{
+    background-color: rgb(179 142 22 / 47%);
+    border: 1px solid transparent;
+    color: #6b5537;
+}
+
+.botonEnviar
+{
+    margin: 0 auto;
+    font-size: 3rem;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #6b5537;  
+    color: white;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.botonEnviar:hover
+{
+    background-color: transparent;
+    color: #6b5537;
+    border:2px solid #6b5537;
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.opcionElegida
+{
+    background-color: rgb(226 91 32 / 85%);
+    border: none;
+    color: white;
+}
+
+.botonera button:active
+{
+    background-color: rgb(226 91 32 / 85%);
+    border-radius: 30px;
+}
+
+/* Animación en caso de no elegir opcion*/
+@keyframes grow {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.3); background-color: rgb(243, 72, 72);margin-left:7px;margin-right: 7px;color:white;border-radius: 50%;font-size: 4rem;font-weight: bolder;}
+    100% {transform: scale(1)}
+  }
+  
+  .animate {
+    animation: grow 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+  }
+
+
+.pantallaCierre, .closer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.pantallaCierre .feedback
+{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.pantallaCierre textarea
+{
+    padding: 20px;
+    line-height: 20px;
+    font-size: 1.7rem;
+}
+
+.pantallaCierre button
+{
+    margin-top: 10px;
+    font-size: 2rem;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #6b5537;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s all ease-in-out;
+}
+
+.pantallaCierre button:hover
+{
+    outline: 3px solid #6b5537;
+    background-color: transparent;
+    color: #6b5537;
+}
+
+h2.gracias
+{
+    font-size: 5rem;
+}
